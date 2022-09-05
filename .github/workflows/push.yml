@@ -1,0 +1,42 @@
+name: Default Node CI
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  lint:
+    name: lints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking Out Commits Securely . . .
+        uses: actions/checkout@v2
+      - name: Setup Node 14 Environment . . .
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install Dependencies . . .
+        working-directory: .
+        run: npm ci
+      - name: Build Docker Image "wh-iterabb-it/kate"
+        run: docker build -t wh-iterabb-it/kate .
+      - name: Run The Lints . . .
+        run: docker run wh-iterabb-it/kate npm run test:lint
+  tests:
+    name: tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking Out Commits Securely . . .
+        uses: actions/checkout@v2
+      - name: Setup Node 14 Environment . . .
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install Dependencies . . .
+        working-directory: .
+        run: npm ci
+      - name: Build Docker Image "wh-iterabb-it/kate"
+        run: docker build -t wh-iterabb-it/kate .
+      - name: Run The Tests . . .
+        run: docker run wh-iterabb-it/kate npm run test
+
