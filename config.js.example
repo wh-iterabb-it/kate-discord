@@ -1,0 +1,14 @@
+const config = {
+	"app": {
+		"name": "",
+		"custom": {
+			"name": "",
+			"website": ""
+		}
+	},
+	"clientId": "xxx",
+	"guildList": ["xx", "xx"],
+	"token": "xxx"
+};
+
+module.exports.default = config;
