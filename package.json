@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./index.js",
-		"deploy:commands": "node ./deploy-commands.js"
+	  "deploy:commands": "node ./deploy-commands.js",
+	  "test:lint": "eslint ."
+
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,13 @@
     "discord.js": "^14.1.2",
     "got": "^11.3.0",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "codecov": "3.8.3",
+    "eslint": "8.23.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1"
   }
 }
