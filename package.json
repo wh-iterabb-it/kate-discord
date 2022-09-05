@@ -1,0 +1,29 @@
+{
+  "name": "kate",
+  "version": "0.0.1",
+  "description": "a simple dicord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+		"deploy:commands": "node ./deploy-commands.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wh-iterabb-it/kate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wh-iterabb-it/kate/issues"
+  },
+  "homepage": "https://github.com/wh-iterabb-it/kate#readme",
+  "dependencies": {
+    "@discordjs/rest": "^1.0.1",
+    "axios": "^0.27.2",
+    "discord.js": "^14.1.2",
+    "got": "^11.3.0",
+    "request": "^2.88.2"
+  }
+}
