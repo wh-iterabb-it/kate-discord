@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./index.js",
-	  "deploy:commands": "node ./deploy-commands.js",
-	  "test:lint": "eslint ."
-
+    "deploy:commands": "node ./deploy-commands.js",
+    "test:lint": "eslint .",    
+    "test:lint:fix": "eslint . --fix --ignore-pattern polyfills"
   },
   "repository": {
     "type": "git",
