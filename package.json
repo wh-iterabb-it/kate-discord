@@ -4,10 +4,10 @@
   "description": "a simple dicord bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"no test specified\" && exit 0",
     "start": "node ./index.js",
     "deploy:commands": "node ./deploy-commands.js",
-    "test:lint": "eslint .",    
+    "test:lint": "eslint .",
     "test:lint:fix": "eslint . --fix --ignore-pattern polyfills"
   },
   "repository": {
