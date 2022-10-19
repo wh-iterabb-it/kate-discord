@@ -13,11 +13,7 @@ kate
 
 A total refactor of [katelibby](https://github.com/wh-iterabb-it/katelibby) bot for [discord](https://discord.com/) as a primary interface. 
 
-
-# crucible.chat
-
 This is a simple discord bot that will send a message to a channel in response to a few commands.
-
 
 ### Adding Bot to Discord Server 
 
