@@ -24,7 +24,7 @@
   "dependencies": {
     "@discordjs/rest": "^1.0.1",
     "axios": "^0.27.2",
-    "discord.js": "^14.1.2",
+    "discord.js": "^14.7.0",
     "got": "^11.3.0",
     "request": "^2.88.2"
   },
