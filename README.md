@@ -2,7 +2,7 @@ kate
 =========
 
 
-[![Issues](https://img.shields.io/github/issues/wh-iterabb-it/kate/.svg)](https://github.com/wh-iterabb-it/kate/issues)
+[![Issues](https://img.shields.io/github/issues/wh-iterabb-it/kate/)](https://github.com/wh-iterabb-it/kate/issues)
 [![License](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/wh-iterabb-it/kate/blob/main/LICENSE)
 ![Known Vulnerabilities](https://snyk.io/test/github/wh-iterabb-it/kate/badge.svg) 
 
