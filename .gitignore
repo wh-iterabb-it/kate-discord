@@ -29,8 +29,6 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-config.json
-
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
@@ -56,8 +54,11 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-
 # next.js build output
 .next
+
+# config files
+config.json
+
+# dotenv environment variables file
+.env

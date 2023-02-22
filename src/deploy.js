@@ -3,8 +3,11 @@ const path = require("path");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord.js");
 const { clientId, guildList, token } = require("../config").default;
+
 const commands = [];
+
 const commandsPath = path.join(__dirname, "commands");
+
 const commandFiles = fs
   .readdirSync(commandsPath)
   .filter((file) => file.endsWith(".js"));
@@ -16,6 +19,7 @@ for (const file of commandFiles) {
 }
 
 const rest = new REST({ version: "10" }).setToken(token);
+
 for (const id of guildList) {
   rest
     .put(Routes.applicationGuildCommands(clientId, id), { body: commands })
