@@ -8,7 +8,7 @@ module.exports = {
 	async execute(interaction) {
 		await getMoonPhase().then(async (response) => {
 			const json = response;
-			const message= `${json.symbol} ${json.name}`;
+			const message = `${json.symbol} ${json.name}`;
 			return interaction.reply(message);
 		});
 		return;

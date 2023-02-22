@@ -1,5 +1,10 @@
 const axios = require("axios").default;
 
+/**
+ * @name getMoonPhase
+ * @description get moon phase
+ * @returns {Promise<import("axios").AxiosResponse<any>>}
+ * */
 function getMoonPhase() {
   const url = `https://shrewdly.herokuapp.com/`;
   const response = axios
@@ -18,6 +23,11 @@ function getMoonPhase() {
   return response;
 }
 
+/**
+ * @name getFortune
+ * @description get fortune
+ * @returns {Promise<import("axios").AxiosResponse<any>>}
+ * */
 function getFortune() {
   const url = `https://aphorismcookie.herokuapp.com/`;
   const response = axios
