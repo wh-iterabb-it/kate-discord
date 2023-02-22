@@ -56,7 +56,7 @@ function getWeeklyFinViz(args) {
  * @name getYearlyFinViz
  * @description get yearly chart from finviz
  * @param {string} args - ticker symbol
- * @returns {Promise<import("axios").AxiosResponse<any>>} 
+ * @returns {Promise<import("axios").AxiosResponse<any>>}
  **/
 function getYearlyFinViz(args) {
   const apiUrl =
