@@ -22,17 +22,17 @@
   },
   "homepage": "https://github.com/wh-iterabb-it/kate#readme",
   "dependencies": {
-    "@discordjs/rest": "^1.7.1",
+    "@discordjs/rest": "^2.0.0",
     "axios": "^1.4.0",
-    "discord.js": "^14.11.0",
+    "discord.js": "^14.12.1",
     "got": "^13.0.0",
     "request": "^2.88.2"
   },
   "devDependencies": {
     "codecov": "3.8.3",
-    "eslint": "8.45.0",
-    "eslint-config-prettier": "8.8.0",
-    "eslint-plugin-import": "2.27.5",
+    "eslint": "8.46.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-import": "2.28.0",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.8.8"
   }
