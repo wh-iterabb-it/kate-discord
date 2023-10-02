@@ -1,4 +1,4 @@
-const fs = require("fs");
+const { readdirSync } = require("fs");
 const path = require("path");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord.js");
@@ -8,9 +8,9 @@ const commands = [];
 
 const commandsPath = path.join(__dirname, "commands");
 
-const commandFiles = fs
-  .readdirSync(commandsPath)
-  .filter((file) => file.endsWith(".js"));
+const commandFiles = readdirSync(commandsPath).filter((file) =>
+  file.endsWith(".js")
+);
 
 for (const file of commandFiles) {
   const filePath = path.join(commandsPath, file);

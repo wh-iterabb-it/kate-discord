@@ -8,8 +8,7 @@ module.exports = {
   async execute(interaction) {
     await getFortune().then(async (response) => {
       const message = `${response}`;
-      return interaction.reply(message);
+      interaction.reply(message).catch((err) => console.error(err));
     });
-    return;
   },
 };
